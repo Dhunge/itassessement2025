@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Cart Sidebar -->
+    <div id="cart-sidebar" class="cart-sidebar hidden">
+        <h2>Your Cart</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: $<span id="cart-total">0.00</span></p>
+        <button id="checkout-btn">Checkout</button>
+    </div>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <a href="#" class="logo"><img src="image/logo.png" alt="Logo" /></a>
+            <ul class="navbar">
+                <li><a href="index.html" class="button">Home</a></li>
+                <li><a href="aboutus.html" class="button">About</a></li>
+                <li><a href="gallery.html" class="button active">Gallery</a></li>
+                <li><a href="shop.html" class="button">Shop</a></li>
+                <li><a href="contactus.html" class="button">Contact Us</a></li>
+            </ul>
+            <div class="icons">
+                <a href="#"><i class="ri-search-line"></i></a>
+                <a href="#"><i class="ri-user-line"></i></a>
+                <a href="#" id="cart-icon"><i class="ri-shopping-cart-fill"></i><span id="cart-count">0</span></a>
+                <div class="bx bx-menu" id="menu-icon"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <div class="container">
+            <h2>One Group,<span>Thousand Memories</span></h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="image/p13.webp" alt="Bikers Cafe" />
+                    <div class="gallery-text">
+                        <h3>Bikers Cafe</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="image/p14.webp" alt="Manang Valley" />
+                    <div class="gallery-text">
+                        <h3>Manang Valley</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="image/p15.webp" alt="Ladhak" />
+                    <div class="gallery-text">
+                        <h3>Ladhak</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="image/p16.webp" alt="Dolpa" />
+                    <div class="gallery-text">
+                        <h3>Dolpa</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="image/p17.webp" alt="Surkhet" />
+                    <div class="gallery-text">
+                        <h3>Surkhet</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="image/p18.webp" alt="Rara" />
+                    <div class="gallery-text">
+                        <h3>Rara</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="image/p19.webp" alt="On the Way to Rara" />
+                    <div class="gallery-text">
+                        <h3>On the Way to Rara</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="image/p20.webp" alt="Bhojpur" />
+                    <div class="gallery-text">
+                        <h3>Bhojpur</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="cart-sidebar" class="cart-sidebar hidden">
+        <h2>Your Cart</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: $<span id="cart-total">0.00</span></p>
+        <button id="checkout-btn">Checkout</button>
+    </div>
+
+
+    <!-- Modal for Image View -->
+    <!-- Modal for Image Popup -->
+    <div id="image-modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-img" />
+        <div id="caption"></div>
+    </div>
+    </div>
+    <!-- Close .product-content -->
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="contact">
+        <div class="main-contact">
+            <div class="contact-content">
+                <h5>Getting Started</h5>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="map-container">
+                <h5>Our Location</h5>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50449.633597962995!2d85.31810280480741!3d27.717016225892465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1857d1f77871%3A0xc5b0391005a641fd!2sKathmandu%20Durbar%20Square!5e1!3m2!1sen!2snp!4v1744354758812!5m2!1sen!2snp"
+                    allowfullscreen="" loading="lazy">
+            </iframe>
+            </div>
+        </div>
+        <div class="end-text">
+            <p>&copy; 2025 All Rights Reserved by CarbonCrafts.</p>
+        </div>
+    </footer>
+    <!-- JS File -->
+    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Cart Sidebar -->
+    <div id="cart-sidebar" class="cart-sidebar hidden">
+        <h2>Your Cart</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: $<span id="cart-total">0.00</span></p>
+        <button id="checkout-btn">Checkout</button>
+    </div>
+    <header>
+        <div class="container">
+            <a href="#" class="logo"><img src="image/logo.png" alt="Logo"></a>
+            <ul class="navbar">
+                <li><a href="index.html" class="button">Home</a></li>
+                <li><a href="aboutus.html" class="button active">About</a></li>
+                <li><a href="gallery.html" class="button">Gallery</a></li>
+                <li><a href="shop.html" class="button">Shop</a></li>
+                <li><a href="contactus.html" class="button">Contact Us</a></li>
+            </ul>
+
+            <div class="icons">
+                <a href="#"><i class="ri-search-line"></i></a>
+                <a href="#"><i class="ri-user-line"></i></a>
+                <a href="#" id="cart-icon">
+                    <i class="ri-shopping-cart-fill"></i>
+                    <span id="cart-count">0</span>
+                </a>
+                <!-- Cart count element -->
+                <div class="bx bx-menu" id="menu-icon"></div>
+            </div>
+        </div>
+    </header>
+
+    <section class="about">
+        <div class="main">
+            <img src="image/meeee.jfif" alt="About Image">
+            <div class="about-text">
+                <h1>About Us</h1>
+                <h5>Developer<span> & Designer</span></h5>
+                <p>As the founder of CarbonCrafts, I am passionate about the world of riding and the freedom it represents. At CarbonCrafts, we specialize in providing high-quality riding gear that ensures safety, comfort, and style for all riders. We understand
+                    that gear is more than just protection—it's about enhancing the experience on every ride. In addition to selling premium riding gear, we also organize and manage exciting rides, bringing together like-minded individuals who share a
+                    love for adventure. Whether you're a seasoned rider or just starting out, CarbonCrafts is here to provide you with the best gear and unforgettable ride experiences. Our mission is to fuel the riding community with top-notch products
+                    and incredible journeys that connect people and the open road.
+                </p>
+                <button type="button" onclick="window.location.href='contactus.html'">Let's Connect</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="contact">
+        <div class="main-contact">
+            <div class="contact-content">
+                <h5>Getting Started</h5>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="map-container">
+                <h5>Our Location</h5>
+                <!-- Google Maps Embed -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50449.633597962995!2d85.31810280480741!3d27.717016225892465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1857d1f77871%3A0xc5b0391005a641fd!2sKathmandu%20Durbar%20Square!5e1!3m2!1sen!2snp!4v1744354758812!5m2!1sen!2snp"
+                    allowfullscreen="" loading="lazy">
+            </iframe>
+            </div>
+
+        </div>
+        <div class="end-text">
+            <p>&copy; 2025 All Rights Reserved by CarbonCrafts.</p>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Custom JS -->
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>
